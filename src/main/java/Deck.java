@@ -7,7 +7,7 @@ public class Deck {//type
     public Deck() {//action
         this.cardsInDeck = new ArrayList<>();
 
-        for (Suit suit:Suit.values()) {
+        for (Suit suit:Suit.values()) { // this method could also be used as a separate method: and called in the constructor. Can also shuffle the deck in the constructor.
             for (Rank rank:Rank.values()) {
                 cardsInDeck.add(new Card(rank, suit));
             }
